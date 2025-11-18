@@ -1,0 +1,36 @@
+# ==== Python ====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+
+# ==== Jupyter ====
+.ipynb_checkpoints/
+
+# ==== Build / Lambda artifacts ====
+build/
+lambda_ingest.zip
+lambda_analytics.zip
+
+# Ignore all .zip files if you prefer
+# *.zip
+
+# ==== Terraform (generated state, not source) ====
+.terraform/
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.*
+terraform/output_ingest.json
+terraform/.terraform.lock.hcl
+
+# ==== OS / Editor ====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
